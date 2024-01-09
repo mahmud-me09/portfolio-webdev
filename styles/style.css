@@ -2,6 +2,9 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
+.background{
+    background-color: #FFF8F3;
+}
 .text-primary{
     color:#FD6E0A;
 }
@@ -12,7 +15,6 @@
     color: white;
     font-weight: bold;
     font-size:20px;
-    width: 150px;
     height: 64px;
     flex-shrink: 0;
     /* letter-spacing: 1px; */
@@ -25,13 +27,15 @@
 }
 nav{
     display:flex;
+    margin: 0px 30px 0px 230px;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    /* align-items: center; all the same */
 }
 .navigation{
     list-style: none;
     display:flex;
-    align-items: center;
+    align-items:baseline;
 }
 .navigation > li{
     margin-right:50px;
@@ -39,5 +43,111 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.header{
+    background-image: url("/images/header_bg.png"), url("/images/developer.png");
+    background-repeat: no-repeat;
+    background-size: 676px, 105px;
+    background-position: right bottom, left bottom;
+    margin-bottom: 0, 20px;
+    height: 837px;
+    background-color: #FFF8F3;
+}
+.banner{
+    margin-left: 230px;
+    margin-bottom: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image{
+    align-items:baseline;
+    padding:10px;
+}
+.contact-btn{
+    background-color: #FFF8F3;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    color:#FD6E0A;
+    width: 160px;
+    height: 64px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.content > h4{
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+.content > h1{
+    font-size:65px;
+    margin: 5px 0px;
+}
+
+/* About me section */
+.about-me{
+    text-align: center;
+    margin: 100px 230px 0px 230px;
+    padding:100px;
+}
+.what-i-do{
+    padding-top:0px !important;
+}
+.credentials{
+    display:flex;
+    justify-content: space-between;
+}
+.info{
+    padding-top: 20px;
+}
+.info > p{
+    padding:0px;
+    margin: 0px;
+}
+
+.skills-container{
+    margin-top: 50px;
+    display: flex;
     
+}
+.skill{
+    text-align: left;
+    padding:10px;
+    border: 2px solid white;
+    margin: 10px;
+    background-color:white ;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.edu-exp{
+    display:flex;
+    justify-content: space-between;
+}
+.my-education{
+    text-align: left;
+    margin-right: 40px;
+}
+.my-experience{
+    text-align:left;
+}
+
+/* footer section */
+.lets-connect, .form{
+    text-align: left;
+}
+.footer{
+    display: flex;
+}
+
+.form > input{
+    margin-bottom: 10px;
+    width: 461px;
+    height: 35px;
+    border-radius: 5px;
+    display:block;
+}
+.form > textarea{
+    width: 461px;
+    height: 180px;
 }
